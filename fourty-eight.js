@@ -13,10 +13,10 @@ function pcrTime() {
   var yesterday = new Date(date.getTime());
   yesterday.setDate(date.getDate() - 1);
 
-  let month = yesterday.getMonth() + 1;
-  if (month.toString().length < 2) month = "0" + month;
-  let day = yesterday.getDate();
-  if (day.toString().length < 2) day = "0" + day;
+  let month = (yesterday.getMonth() + 1).toString();
+  if (month.length < 2) month = "0" + month;
+  let day = yesterday.getDate().toString();
+  if (day.length < 2) day = "0" + day;
 
   return month + "-" + day + " 15:33";
 }
