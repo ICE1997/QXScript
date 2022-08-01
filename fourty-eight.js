@@ -2,6 +2,7 @@ let body = JSON.parse($response.body);
 let pcrInfo = body.data.pcrInfo;
 pcrInfo.pcrTime = pcrTime();
 pcrInfo.checkTime = pcrInfo.pcrTime;
+pcrInfo.compareTime = pcrInfo.pcrTime;
 pcrInfo.time = "1";
 pcrInfo.pcrStatus = "1";
 pcrInfo.newPcrStatus = "1";
