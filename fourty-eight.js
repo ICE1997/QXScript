@@ -3,6 +3,7 @@ let pcrInfo = body.data.pcrInfo;
 pcrInfo.pcrTime = pcrTime();
 pcrInfo.checkTime = pcrInfo.pcrTime;
 pcrInfo.compareTime = pcrInfo.pcrTime;
+pcrInfo.receivetime = pcrInfo.pcrTime;
 pcrInfo.timeUnit = "小时内";
 pcrInfo.time = "24";
 pcrInfo.newPcrStatusDesc = "阴性";
